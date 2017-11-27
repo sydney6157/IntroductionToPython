@@ -90,7 +90,8 @@ matt.forward(50)
 ########################################################################
 
 matt.backward(100)
-dave.left(150)
+dave.right(90)
+dave.forward(50)
 
 ########################################################################
 #
@@ -113,12 +114,11 @@ dave.left(150)
 #
 ########################################################################
 
-james = rg.SimpleTurtle('turtle')
-james.pen = rg.Pen('blue', 30)
+james = rg.SimpleTurtle()
 james.speed = 10  # Faster
 james.backward(200)
 james.left(100)
-james.forward(80)
+james.forward(100)
 
 ########################################################################
 #
