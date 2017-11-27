@@ -34,12 +34,8 @@ import rosegraphics as rg
 window = rg.TurtleWindow()
 
 sam = rg.SimpleTurtle('turtle')
-sam.pen = rg.Pen('midnight blue', 3)
-sam.speed = 100  # Fast
-
-john = rg.SimpleTurtle('turtle')
-john.pen = rg.Pen('red', 3)
-john.speed = 100  # Fast
+sam.pen = rg.Pen('black', 3)
+sam.speed = 100
 
 radius = 100
 
@@ -53,7 +49,11 @@ for k in range(15):
     sam.left(60)
 
     sam.pen_down()
-    radius= radius - 12
+    radius= radius - 15
+
+john = rg.SimpleTurtle('turtle')
+john.pen = rg.Pen('red', 3)
+john.speed = 100
 
 rad = 100
 for k in range(15):
@@ -66,7 +66,7 @@ for k in range(15):
     john.left(120)
 
     john.pen_down()
-    rad= rad - 12
+    rad= rad - 15
 
 
 window.close_on_mouse_click()
